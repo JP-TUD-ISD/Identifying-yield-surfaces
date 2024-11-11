@@ -1,0 +1,3 @@
+# Example Readme
+
+The examples presented here are run with the included Fortran source code, which has been compiled with `f2py`. To be able to verify the installation of the source code, the compiled files have to be placed inside the example directories. Afterwards, the *00_run.sh* script can be executed. The obtained results should match the reference solution, which is provided in the results directory. The settings in *id-fy.py* are set. 
