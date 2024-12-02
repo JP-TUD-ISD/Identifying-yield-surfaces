@@ -3,6 +3,9 @@
 ## Important notes
 Currently, the script only runs on Linux based operating systems. 
 
+## Theory
+A scientific paper about the theory of this algorithm is available at the [International Journal of Plasticity](https://doi.org/10.1016/j.ijplas.2024.104183).
+
 ## Description
 This project provides an interface for identifying yield functions. On the HPC, many serial simulations can be executed simultaneously. 
 
@@ -54,9 +57,6 @@ If other macroscopic yield functions should be incorporated, only modifications 
 
 ## Extension to other FE software
 The source code can be extended to work with other FE software. Currently, usage with the FE software FEAP is supported. For the incorporation of other software, the function dofeap2 needs to be adjusted. This function takes the point in the eigenstress space as input (vall) and returns the kind of behavior and the value of the yield function (resi). The API to the software needs to be adjusted. The input file needs to be modified so that the point on the hydrostatic axis is tested. Furthermore, the FE software needs to provide the values of the yield function. This API needs to be programmed by the user.
-
-## Theory
-A scientific paper about the theory of this algorithm is available at the [International Journal of Plasticity](https://doi.org/10.1016/j.ijplas.2024.104183).
 
 ## Future Features
 A list of things that can be included in the future.
