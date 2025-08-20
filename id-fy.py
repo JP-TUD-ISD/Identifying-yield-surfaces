@@ -413,9 +413,9 @@ def dofeap2(vall):
 
     if not dobinaryfiles:
         rempath = os.getcwd()
-        os.system('cp ' + feapinputfile + " " + www)
+        os.system('cp ' + feapinputfile + ' "' + www + '"')
         if histrun:
-            os.system('cp ' + histfile + " " + www)
+            os.system('cp ' + histfile + ' "' + www + '"')
         os.chdir(www)
     changeinput(filenamefeap=feapinputfile, spec=specifiers, val=valtoreplace, value=vall)
     startfeap(iname=feapinputfile, feapname=feapdir)
