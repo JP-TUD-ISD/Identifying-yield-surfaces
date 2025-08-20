@@ -44,9 +44,9 @@ class VectorEvaluation(ElementwiseProblem):
         # print(a)
         if not self.dobinaryfiles:
             rempath = os.getcwd()
-            os.system('cp ' + self.feapinputfile + " " + self.www)
+            os.system('cp ' + self.feapinputfile + ' "' + self.www + '"')
             if self.histrun:
-                os.system('cp ' + self.histfile + " " + self.www)
+                os.system('cp ' + self.histfile + ' "' + self.www + '"')
             os.chdir(self.www)
         self.changeinput(vall=vall)
         self.startfeap()
